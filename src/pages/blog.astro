@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+const base = import.meta.env.BASE_URL;
+
 const posts = [
   {
     title: "Building a CNN-XGBoost Hybrid Model for Medical Image Classification",
-    href: "/blog/breast-thermal-classification",
+    href: `${base}blog/breast-thermal-classification`,
     date: "December 15, 2024",
     readTime: "8 min read",
     excerpt: "A deep dive into combining the feature extraction power of Convolutional Neural Networks with the classification prowess of XGBoost. Learn how we achieved 73%+ accuracy on breast thermal image classification.",
@@ -12,7 +14,7 @@ const posts = [
   },
   {
     title: "BADI: Building a Business Analytics Solution with Machine Learning",
-    href: "/blog/badi-analytics",
+    href: `${base}blog/badi-analytics`,
     date: "July 20, 2022",
     readTime: "6 min read",
     excerpt: "How my team developed BADI (Business Analytics Daily Income) during the Bangkit Academy program. From ideation to implementation of a product-based ML solution for business insights.",
@@ -20,7 +22,7 @@ const posts = [
   },
   {
     title: "How I Got Selected for Bangkit Academy - Google's ML Program",
-    href: "/blog/getting-into-bangkit",
+    href: `${base}blog/getting-into-bangkit`,
     date: "March 5, 2022",
     readTime: "4 min read",
     excerpt: "Sharing my experience of applying and getting selected as 1 of 3,100 students for Google's premier academy program. What I learned and how it shaped my career in AI/ML.",

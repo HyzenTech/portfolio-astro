@@ -33,23 +33,23 @@ const {
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Source+Sans+Pro:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Interactive Styles -->
-  <link rel="stylesheet" href="/styles/interactive.css">
+  <link rel="stylesheet" href={`${import.meta.env.BASE_URL}styles/interactive.css`}>
   
   <!-- Interactive Scripts -->
-  <script src="/scripts/interactive.js" defer></script>
+  <script src={`${import.meta.env.BASE_URL}scripts/interactive.js`} defer></script>
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="container">
       <nav class="nav">
-        <a href="/" class="nav__logo">Hafiz</a>
+        <a href={import.meta.env.BASE_URL} class="nav__logo">Hafiz</a>
         
         <ul class="nav__menu" id="navMenu">
-          <li><a href="/" class:list={["nav__link", { "nav__link--active": activeNav === "projects" }]}>Projects</a></li>
-          <li><a href="/about" class:list={["nav__link", { "nav__link--active": activeNav === "about" }]}>About Me</a></li>
-          <li><a href="/blog" class:list={["nav__link", { "nav__link--active": activeNav === "blog" }]}>Blog</a></li>
-          <li><a href="/contact" class:list={["nav__link", { "nav__link--active": activeNav === "contact" }]}>Contact</a></li>
+          <li><a href={import.meta.env.BASE_URL} class:list={["nav__link", { "nav__link--active": activeNav === "projects" }]}>Projects</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}about`} class:list={["nav__link", { "nav__link--active": activeNav === "about" }]}>About Me</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}blog`} class:list={["nav__link", { "nav__link--active": activeNav === "blog" }]}>Blog</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}contact`} class:list={["nav__link", { "nav__link--active": activeNav === "contact" }]}>Contact</a></li>
         </ul>
         
         <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">

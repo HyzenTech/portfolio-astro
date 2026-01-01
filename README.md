@@ -1,43 +1,89 @@
-# Astro Starter Kit: Minimal
+# Muhammad Hafiz - Portfolio
 
-```sh
-npm create astro@latest -- --template minimal
+🌐 **Live Site:** [https://hyzentech.github.io/portfolio-astro/](https://hyzentech.github.io/portfolio-astro/)
+
+A personal portfolio website showcasing my work as an AI/ML Engineer & Researcher.
+
+---
+
+## 🔗 Quick Links
+
+| Page | Description |
+|------|-------------|
+| [**Projects**](https://hyzentech.github.io/portfolio-astro/) | Featured ML research projects |
+| [**About Me**](https://hyzentech.github.io/portfolio-astro/about) | Background, education & skills |
+| [**Blog**](https://hyzentech.github.io/portfolio-astro/blog) | Technical articles & insights |
+| [**Contact**](https://hyzentech.github.io/portfolio-astro/contact) | Get in touch |
+
+---
+
+## ✨ Features
+
+- **Modern Design** — Minimalist aesthetic inspired by [Jona](https://jonaac.github.io/)
+- **Interactive Effects** — Custom cursor, magnetic buttons, scroll animations (inspired by [Lusion](https://lusion.co/))
+- **Responsive** — Mobile-first design with hamburger menu
+- **Performance** — Static site generation with Astro
+- **Accessibility** — Respects `prefers-reduced-motion`
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Astro](https://astro.build/) v5
+- **Typography:** Cormorant Garamond + Source Sans Pro
+- **Animations:** Vanilla JS with Intersection Observer
+- **Deployment:** GitHub Pages + GitHub Actions
+
+---
+
+## 🚀 Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 📁 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```
+src/
+├── layouts/
+│   └── BaseLayout.astro      # Global layout
+├── components/
+│   ├── ProjectCard.astro     # Project cards
+│   ├── Timeline.astro        # Experience/education timeline
+│   └── SkillsGrid.astro      # Skills display
+└── pages/
+    ├── index.astro           # Projects page
+    ├── about.astro           # About page
+    ├── blog.astro            # Blog listing
+    ├── contact.astro         # Contact page
+    └── blog/                 # Individual blog posts
+public/
+├── images/                   # Profile & project images
+├── scripts/interactive.js    # Lusion-style effects
+└── styles/interactive.css    # Effect styles
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 📬 Contact
 
-Any static assets, like images, can be placed in the `public/` directory.
+- **Email:** techhafiz81@gmail.com
+- **LinkedIn:** [muhammadhafiz1206](https://linkedin.com/in/muhammadhafiz1206)
+- **GitHub:** [HyzenTech](https://github.com/HyzenTech)
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Built with ❤️ using Astro
